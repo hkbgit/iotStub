@@ -4,8 +4,6 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 COPY iot-stub-aa /usr/local/tomcat/webapps/
 COPY iot-stub-ab /usr/local/tomcat/webapps/
-COPY iot-stub-ac /usr/local/tomcat/webapps/
-COPY iot-stub-ad /usr/local/tomcat/webapps/
 
 RUN cat /usr/local/tomcat/webapps/iot-stub-* > /usr/local/tomcat/webapps/iot-stub.war
 RUN unzip /usr/local/tomcat/webapps/iot-stub.war -d /usr/local/tomcat/webapps/ROOT
