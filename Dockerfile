@@ -1,4 +1,4 @@
-from tomcat:8.5.46-jdk8-openjdk 
+from tomcat:8.5.46-jdk11-openjdk 
 MAINTAINER ies
 RUN rm -rf /usr/local/tomcat/webapps/*
 
